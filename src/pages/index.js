@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Header from "./components/Header";
 import { useState } from "react";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function Home() {
     <main className="">
       <Header {...props} />
       <Navigation {...props} />
+      <Footer />
     </main>
   );
 }
