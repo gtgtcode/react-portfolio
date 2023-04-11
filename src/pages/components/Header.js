@@ -13,11 +13,8 @@ const Header = ({
 }) => {
   return (
     <header>
-      <div className="container w-3/4 mx-auto p-6" id="header-text">
-        <h1
-          id="header-title"
-          className="hover:text-purple-400 transition md:text-left text-center"
-        >
+      <div className="container w-3/4 mx-auto p-6 mt-4" id="header-text">
+        <h1 id="header-title" className="md:text-left text-center md:inline">
           <a
             href="#"
             onClick={() => {
@@ -26,6 +23,7 @@ const Header = ({
               setOnContact(false);
               setOnResume(false);
             }}
+            className="hover:text-purple-400 transition"
           >
             gtgt(code);
           </a>
@@ -46,10 +44,28 @@ const Header = ({
           >
             Portfolio
           </a>
-          <a href="/contact" className="hover:text-purple-400 transition mx-2">
+          <a
+            href="#"
+            onClick={() => {
+              setOnAbout(false);
+              setOnPortfolio(false);
+              setOnContact(true);
+              setOnResume(false);
+            }}
+            className="hover:text-purple-400 transition mx-2"
+          >
             Contact
           </a>
-          <a href="/resume" className="hover:text-purple-400 transition ml-2">
+          <a
+            href="#"
+            onClick={() => {
+              setOnAbout(false);
+              setOnPortfolio(false);
+              setOnContact(false);
+              setOnResume(true);
+            }}
+            className="hover:text-purple-400 transition ml-2"
+          >
             Resume
           </a>
         </div>
