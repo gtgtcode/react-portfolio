@@ -17,7 +17,7 @@ const Contact = () => {
         <h1 className="md:text-6xl text-4xl text-center mt-6">Contact Me</h1>
         <h2 className="md:text-xl text-lg text-center mt-12 mb-12 p-2">
           I'd love to get in touch! Please use this form to contact me, or email
-          me directly at{" "}
+          me directly at
           <a
             href="mailto:glthomas526@gmail.com"
             className="md:underline md:hover:text-purple-400 md:text-white text-purple-400 transition"
