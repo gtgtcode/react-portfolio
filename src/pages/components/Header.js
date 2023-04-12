@@ -74,15 +74,39 @@ const Header = ({
           className="md:hidden block text-center mt-4"
         >
           <a
-            href="/portfolio"
+            href="#"
+            onClick={() => {
+              setOnAbout(false);
+              setOnPortfolio(true);
+              setOnContact(false);
+              setOnResume(false);
+            }}
             className="hover:text-purple-400 transition mr-2"
           >
             Portfolio
           </a>
-          <a href="/contact" className="hover:text-purple-400 transition mx-2">
+          <a
+            href="#"
+            onClick={() => {
+              setOnAbout(false);
+              setOnPortfolio(false);
+              setOnContact(true);
+              setOnResume(false);
+            }}
+            className="hover:text-purple-400 transition mx-2"
+          >
             Contact
           </a>
-          <a href="/resume" className="hover:text-purple-400 transition ml-2">
+          <a
+            href="#"
+            onClick={() => {
+              setOnAbout(false);
+              setOnPortfolio(false);
+              setOnContact(false);
+              setOnResume(true);
+            }}
+            className="hover:text-purple-400 transition ml-2"
+          >
             Resume
           </a>
         </div>
