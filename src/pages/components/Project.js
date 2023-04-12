@@ -2,10 +2,10 @@ import React from "react";
 
 const Project = (props) => {
   return (
-    <div>
+    <div className="container mx-auto">
       <div
         id="project-container"
-        className="md:w-[300px] max-w-[300px] h-[600px] bg-purple-400 container mx-auto m-4 md:mx-4 p-4"
+        className="md:w-[300px] max-w-[300px] h-[600px] bg-purple-400 container mx-auto m-4 p-4"
       >
         <img src={props.src} alt={props.alt}></img>
         <h1 className="text-center text-2xl my-4">{props.name}</h1>
